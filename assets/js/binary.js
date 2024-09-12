@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.1","target":"arcade","targetVersion":"1.12.56","repo":"riknoll/arcade-github-pages-example"}
-// total=1260079 new=5.86% cached=88.49% other=5.66%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.2","target":"arcade","targetVersion":"1.12.56","repo":"riknoll/arcade-github-pages-example"}
+// total=1261462 new=5.86% cached=88.49% other=5.65%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -431,7 +431,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P36134(s) {
+function _main___P36259(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -830,31 +830,36 @@ switch (step) {
   case 36:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P20242_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex35969);
+    r0 = pxsim.image.ofBuffer(_hex36214);
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = globals.Player___20447;
     s.callLocIdx = 63; s.pc = 37; return s.tmp_0;
   case 37:
     r0 = s.retval;
-    globals.mySprite___35966 = (r0);
+    globals.mySprite___36211 = (r0);
     s.tmp_0 = controller_moveSprite__P20134_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___35966;
+    s.tmp_0.arg0 = globals.mySprite___36211;
     s.tmp_0.arg1 = 100;
     s.tmp_0.arg2 = 100;
     s.callLocIdx = 64; s.pc = 38; return s.tmp_0;
   case 38:
     r0 = s.retval;
+    s.tmp_0 = scene_setBackgroundColor__P20850_mk(s);
+    s.tmp_0.arg0 = 7;
+    s.callLocIdx = 65; s.pc = 39; return s.tmp_0;
+  case 39:
+    r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P36134.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P36134.continuations = [  ]
+_main___P36259.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P36259.continuations = [  ]
 
-function _main___P36134_mk(s) {
+function _main___P36259_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P36134, depth: s.depth + 1,
+        parent: s, fn: _main___P36259, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -882,7 +887,7 @@ const _hex23175 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000
 const _hex23177 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cc00000000000000b0bbbbbbbbcb00c0cd000000000000001bddddddddbd0c1ccd000000000000b011cbccccccbc0c1ccd000000000000b01d6c666666bc0cbccd000000000000b01d6c616661bc0c1ccd000000000000b01d6c161666bccc1bcd000000000000b01d6c666166bcccbbcd000000000000b01d6c666666bccc1bcd000000000000b01d6c666661bccc1bcd000000000000b01d6c666661bcccbbcd000000000000b01d6c666661bccc1bcd000000000000b01d6c666666bc0c1ccd000000000000b01dcbccccccbc0cbccd000000000000c0b1bbbbbbbbbb0cdccb000000000000c0bbbbbbbbbbcb00dc0c00000000000000cccccccccc0c00cc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 const _hex23179 = pxsim.BufferMethods.createBufferFromHex("87042000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004004000000000000000000000000000054450000000000000000000000440b00bbbb00b0440000000000000040550b00000000b0550400000000000040b5000044bb00005b04000000000000b00b0044ddddbb00b00b0000000000000000405d55d5dd0b00000000000000000000d4555555ddbd0000000000000000000054555555d5bd0000000000000000b44055555555d5dd0b4b000000000040b54055555555d5dd0b5b040000000040b54055555555d5dd0b5b040000000000b44055115555d5dd0b4b000000000000000054115555d5bd00000000000000000000d4555555ddbd00000000000000000000405d55d5dd0b0000000000000000b00b0044ddddbb00b00b00000000000040b5000044bb00005b0400000000000040550b00000000b0550400000000000000440b00bbbb00b0440000000000000000000000544500000000000000000000000000004004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 const _hex23181 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000bbbb00000000000000000000000000b055bb00bbbbbb000000000000000000b0b5bdbcbbbbddcb0000000000000000b0dbcb5b5555bbdd0c00000000000000b0cbdcbdbb5b55dbcd0000000000000000c0dddb11d15bb5bd0c00000000000000bbbd111111b155bb0c00000000000000db1b111111115bb5cb00000000000000db1bb11d1199b9d5cb00000000000000db1b11bb9199b955cb000000000000005b1b11b19b99995bcb000000000000005b1d1111bb99995ccb00000000000000b0b511bbbb99995ccb00000000000000b0d51d919999d95b0b00000000000000005bdb919999c9d50b0000000000000000b0d51b99d9bcb5000000000000000000005bd5bbbc550b00000000000000000000b05b5555bd000000000000000000000000b0bbbb00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex35969 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000bbcb0c0000000000bdddcb0000000000dddcdd0c000000005dc5ddcb0000b0bb5bd5dccd0000bb555b55dccd00b05b55bd55dbcd00b0d5d155bdd5cd00b015ff555555cdb0bbf5bf455555c55bbc55d5445555c5b5b055dd445555b50b00db44445555bb0000f04c445bd50b00000000b4b0bb00000000000b000000")
+const _hex36214 = pxsim.BufferMethods.createBufferFromHex("870410001000000000000000bbcb0c0000000000bdddcb0000000000dddcdd0c000000005dc5ddcb0000b0bb5bd5dccd0000bb555b55dccd00b05b55bd55dbcd00b0d5d155bdd5cd00b015ff555555cdb0bbf5bf455555c55bbc55d5445555c5b5b055dd445555b50b00db44445555bb0000f04c445bd50b00000000b4b0bb00000000000b000000")
 
 
 
@@ -1388,6 +1393,49 @@ function gameOverConfig_inline__P22878_mk(s) {
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
+} }
+
+
+
+
+
+function scene_setBackgroundColor__P20850(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    s.scene___36192 = undefined;
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.lambdaArgs = null;
+    }
+    s.tmp_0 = game_currentScene__P20966_mk(s);
+    s.callLocIdx = 36; s.pc = 1; return s.tmp_0;
+  case 1:
+    r0 = s.retval;
+    s.scene___36192 = (r0);
+    r0 = s.scene___36192.fields["background"];
+    s.tmp_0 = r0;
+    r0 = (s.tmp_0).fields["color"] = (s.arg0);
+    r0 = undefined;
+    return leave(s, r0)
+  default: oops()
+} } }
+scene_setBackgroundColor__P20850.info = {"start":1231,"length":140,"line":53,"column":4,"endLine":56,"endColumn":5,"fileName":"pxt_modules/game/scenes.ts","functionName":"setBackgroundColor","argumentNames":["color"]}
+
+function scene_setBackgroundColor__P20850_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: scene_setBackgroundColor__P20850, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  scene___36192: undefined,
+  arg0: undefined,
 } }
 
 
@@ -42735,7 +42783,7 @@ const sprites_BaseSpriteSayRenderer__C20226_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["mySprite___35966"])
+const breakpoints = setupDebugger(1, ["mySprite___36211"])
 
-return _main___P36134
+return _main___P36259
 })
